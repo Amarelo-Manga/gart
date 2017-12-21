@@ -4,8 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head(); ?>
-<script src="https://use.typekit.net/hzq6ncj.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 
 
 
