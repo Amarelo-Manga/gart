@@ -355,6 +355,8 @@ function twentysixteen_scripts() {
 
 	wp_enqueue_script( 'twentysixteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20160816', true );
 
+	wp_enqueue_script( 'twentysixteen-main-scripts', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), '20171222', true );
+
 	wp_localize_script( 'twentysixteen-script', 'screenReaderText', array(
 		'expand'   => __( 'expand child menu', 'twentysixteen' ),
 		'collapse' => __( 'collapse child menu', 'twentysixteen' ),
