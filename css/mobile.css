@@ -2,6 +2,7 @@
 @media only screen 
   and (min-width: 320px) 
   and (max-width: 480px){
+
     html{overflow-x: hidden;}
 
     .container{width:100%;}
@@ -25,7 +26,7 @@
     #search_box{width: 100%;text-align: center;margin: 15px 0px;}
     #search_box h2{margin-top: 10px;margin-bottom: 10px;}
     .searchandfilter{margin: 5px 0;}
-    .searchandfilter ul{padding-left: 0px !important;}
+    .searchandfilter ul{padding-left: 0px !important;width: 100%}
     .searchandfilter li{width: 100%;padding:0px;}
     #oflinha_de_produto{width: 93%;background: #fff;border-radius: 0px;margin: 10px;padding: 5px;color: #686969;border: 1px solid #ccc;}
     #search_box .searchandfilter input[type=text]{width: 90%;}
@@ -53,8 +54,36 @@
     /*Sobre a gart*/
     .container_page{width: 100%;}
     #content{width: 100%;}
-    .image_top{width: 100%;}
-    .image_top img{width:100%!important;height: auto!important;}
+    #image_top{width: 100%;}
+    #image_top img{width:100%!important;height: auto!important;}
+    header.entry-header{margin-left: 15px;}
+    #post-2 h1{margin-left:0px;}
+    #pg-2-0{padding: 0 15px;}
+    #pg-2-0 .panel-row-style{margin-left:0px!important;margin-right:0px!important;padding-left:0px!important;padding-right:0px!important;}
+    #panel-2-0-1-0> .panel-widget-style{margin-top: 0px;} 
+
+    /*Produtos*/
+    div#primary{width:100%;display: inline-block;}
+    #banner_top_prod{width: 100%;}
+    #banner_top_prod img{width: 100%;}
+    #head_prod{width:100%;margin: 0px;padding-left: 15px;display: block;}
+    .rodatetos_prod #title{width: 100%;max-width: 287px;float: initial;margin:0px;}
+    #title h1{font-size: 25px;display: inline-block;}
+    .descri{display: inline-block;}
+    .descri p{display: inline-block;}
+    #search_filter_prod{float: initial;}
+    #primary .searchandfilter{float: initial;width: 100%;margin:0px;}
+    #primary .searchandfilter input[type=text]{width: 100%;margin-top: 0px;max-width: 280px;}
+    .searchandfilter input[type=submit]{padding: 5px 30px!important;margin: 10px 0px!important;}
+    .list_prod{padding:15px;}
+    .list_prod li{width: 100%;}
+    .navigation li{width:0px;}
+    li.next_page{width: 95px !important;}
+
+
+
+
+
   
 }
 
