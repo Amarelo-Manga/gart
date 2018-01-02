@@ -1,0 +1,60 @@
+/* Phones Portrait and Landscape */
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 480px){
+    html{overflow-x: hidden;}
+
+    .container{width:100%;}
+
+    #top_menu .label_social{float: left;padding: 14px 3%;font-size: 14px;}
+    #top_menu #social_list{margin-left:0px; margin-right: 2%;padding: 0px;}
+    #main_menu #menu-menu-principal{width:100%;margin-top:70px;margin-left:0px;padding:0px;display:none;}
+    #main_menu .logo{margin: 13px 3%;}
+    #main_menu .home_icon{display:none;}
+    #main_menu .icon-menu-reposive{display:block;font-family: "Genericons";float: right;margin: 5% 5%;cursor:pointer;}
+    #main_menu .icon-menu-reposive i{font-size: 2.2em;}
+    #main_menu li{float:none;padding: 3px 0px;text-align: center;padding: 5px 0px;margin: 0px 20px;border-bottom: 1px solid #ededed;border-right: 0px;}
+    #main_menu li .sub-menu{position:unset;margin-left: 0px!important;margin: 0 auto!important;}
+
+
+    /* Home */
+    #dest_prod{display: inline-block;}
+    .list_prod_det{width:100%;margin:0px;padding:0px;}
+    .list_prod_det li{float:none;margin: 10px auto;}
+    #list_dest{width: 100%;}
+    #search_box{width: 100%;text-align: center;margin: 15px 0px;}
+    #search_box h2{margin-top: 10px;margin-bottom: 10px;}
+    .searchandfilter{margin: 5px 0;}
+    .searchandfilter ul{padding-left: 0px !important;}
+    .searchandfilter li{width: 100%;padding:0px;}
+    #oflinha_de_produto{width: 93%;background: #fff;border-radius: 0px;margin: 10px;padding: 5px;color: #686969;border: 1px solid #ccc;}
+    #search_box .searchandfilter input[type=text]{width: 90%;}
+    #search_box .searchandfilter input[type=submit]{text-transform: uppercase;padding: 10px 40px;}
+    #more_galery{padding: 10px 0px 10px 45px;font-size: 1.2em;margin-left: 20px;display: inline-block;}
+    #list_news{width: 100%;padding: 0px;margin: 10px auto 20px;}
+    .det_news{width: 70%;display: block;padding: 3%;margin: 2% 10%;}
+    .det_news img{width: 100%;}
+    .det_news h3{text-align: center;}
+    #more_news{padding: 0px;padding: 5px 0px;margin-bottom: 30px;}
+    #more_news a{padding-left: 40px;}
+    #news{}
+    #title_news h2{padding: 5px 0 5px 60px;font-size: 20px;margin-left: 3%;}
+    #destaques{}
+    #list_dest h2{margin-top: 5px;margin-bottom: 5px;}
+    #list_dest p{padding: 0px;margin: 0 auto;margin-bottom: 15px;}
+    #list_dest .call_orange a{padding: 10px;}
+    #list_dest li{margin-bottom: 50px;}
+    #gallery{display: block;}
+    #gallery figure.gallery-item{width:90%;margin: 2% 6%;}
+    .col_footer{width: 100%;margin: 15px 25px 0px;}
+    .social_footer{margin-left: -50px;}
+    #menu-menu_rodape{padding: 0px 15px;}
+
+    /*Sobre a gart*/
+    .container_page{width: 100%;}
+    #content{width: 100%;}
+    .image_top{width: 100%;}
+    .image_top img{width:100%!important;height: auto!important;}
+  
+}
+

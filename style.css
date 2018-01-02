@@ -2,7 +2,6 @@
 
 @import "fonts/stylesheet.css";
 
-
 /* CSS Document */
 body{border:0; margin: 0; padding: 0; font-family: 'Futura-Light', sans-serif;  font-weight: 300; background-color:#ededed;}
 html{border:0; margin: 0; padding: 0;}
@@ -36,6 +35,7 @@ sup { font-size: small;}
 #main_menu {padding: 0; display: table; width: 100%; position: relative; BACKGROUND-COLOR:#FFFFFF; 
 box-shadow: 0px 0px 8px 0px #AAAAAA;-webkit-box-shadow: 0px 0px 8px 0px;-moz-box-shadow: 0px 0px 8px 0px #666;
 -o-box-shadow: 0px 0px 8px 0px #666; z-index: 200;}
+#main_menu .icon-menu-reposive{display: none;}
 
 #main_menu ul {width:980px; margin-left: 30px; margin-top: 0px;}
 #main_menu li{ float:left; margin-left:0px; font-size: 15px; text-transform: uppercase; list-style: none; border-right: 1px solid #d3d3d3; padding: 40px 20px;}

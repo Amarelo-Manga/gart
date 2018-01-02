@@ -9,11 +9,11 @@
 </ul> 	
   	</div>
   	<div class="col_footer">
-  	<b>Projetos</b><br>
-Rua Aureliano Guimarães, 150<br>
-2° andar. Conjunto 214<br>
-Vila Andrade - São Paulo - SP<br>
-+55 (11) 5511 7520<br>
+  		<b>Projetos</b><br>
+		Rua Aureliano Guimarães, 150<br>
+		2° andar. Conjunto 214<br>
+		Vila Andrade - São Paulo - SP<br>
+		+55 (11) 5511 7520<br>
 		<b><a href="https://www.google.com.br/maps/place/R.+%C3%81ureliano+Guimar%C3%A3es,+150+-+Vila+Andrade,+S%C3%A3o+Paulo+-+SP,+05727-160/data=!4m2!3m1!1s0x94ce514e3c573059:0x1816c8c11a9faac9?sa=X&ved=0ahUKEwi5koTgrJrUAhUFhpAKHVUSCYwQ8gEILjAB" target="_blank">Ver mapa</a></b>	
   	</div>
   	<div class="col_footer">		

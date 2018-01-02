@@ -74,37 +74,30 @@
 		</div>
 	</div>
 	<ul id="list_news">
-
 		<?php 
+	        $args = array(
+		        'posts_per_page' => 3,
+		        'orderby' => 'most_recent'
+	        	);
 
-
-        $args = array(
-        'posts_per_page' => 3,
-        'orderby' => 'most_recent'
-        );
-
-        $the_query = new WP_Query( $args );
-
+       		$the_query = new WP_Query( $args );
         ?>
-
-		<ul>
-
 			<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-			<li class="det_news">
-				<?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?>
-				<a href="<?php the_permalink();?>">
-					<h3>
-						<?php the_title(); ?>
-					</h3>
-				</a>
-				<hr/>
-				<a href="<?php the_permalink();?>">
-				<p>
-					<?php the_excerpt(); ?>
-				</p>
-				</a>
-			</li>
+				<li class="det_news">
+					<?php if ( has_post_thumbnail() ) {the_post_thumbnail();} ?>
+					<a href="<?php the_permalink();?>">
+						<h3>
+							<?php the_title(); ?>
+						</h3>
+					</a>
+					<hr/>
+					<a href="<?php the_permalink();?>">
+					<p>
+						<?php the_excerpt(); ?>
+					</p>
+					</a>
+				</li>
 
 			<?php endwhile; else: ?>
 
