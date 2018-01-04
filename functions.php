@@ -361,6 +361,8 @@ function twentysixteen_scripts() {
 		'expand'   => __( 'expand child menu', 'twentysixteen' ),
 		'collapse' => __( 'collapse child menu', 'twentysixteen' ),
 	) );
+
+	wp_enqueue_script( 'contactform7-validate', get_template_directory_uri() . '/js/contactform7-validate.js', array(), '20180104', true );
 }
 add_action( 'wp_enqueue_scripts', 'twentysixteen_scripts' );
 
@@ -496,4 +498,51 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+
+
+// Ajax Contact Form Revenda
+
+add_action('wp_ajax_email_revenda', 'email_revenda');
+add_action('wp_ajax_nopriv_email_revenda', 'email_revenda');
+
+function email_revenda() {
+
+	$form_post_id  = '16987';
+
+    global $wpdb;
+    $table_name = $wpdb->prefix.'db7_forms';
+    $results    = $wpdb->get_results( "SELECT * FROM $table_name WHERE form_post_id = $form_post_id LIMIT 1", OBJECT );
+   
+    $response  = "nao";
+   
+    for ($i = 0; $i < count($results) ; $i++) {
+    	$row  = isset($results[0]) ? unserialize( $results[0]->form_value ): 0 ;
+    	if( $row['email'] === $_REQUEST["email"]){
+    		$response = "sim";
+    	}
+    }
+    echo $response;
+
+    // Don't forget to stop execution afterward.
+    wp_die();
+}
+
+add_action('wp_ajax_session_revenda', 'session_revenda');
+add_action('wp_ajax_nopriv_session_revenda', 'session_revenda');
+
+function session_revenda(){
+	$response = "nao";
+
+	session_start();
+	$_SESSION['revenda'] = 1;
+
+	if ( isset( $_SESSION[ 'revenda' ] ) ) {
+		$response = "sim";
+	}
+
+	echo $response;
+}
+
+
 
