@@ -1,7 +1,4 @@
 
-    var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
-
-
 document.addEventListener('wpcf7mailsent', function(event){
 		
 	var formId = event.detail.contactFormId;
