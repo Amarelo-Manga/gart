@@ -11,10 +11,6 @@
 	<link rel='stylesheet' media='(min-width: 768px) and (max-width: 1024px)' href='<?php echo get_template_directory_uri()?>/css/tablets.css' />
 
 	<script type="text/javascript">
-		document.addEventListener('wpcf7mailsent', function(event){
-			location = 'http://gart.com.br/mensagem-enviada/';
-		},false);
-
 		function MM_showHideLayers() { //v9.0
 			var i,p,v,obj,args=MM_showHideLayers.arguments;
 			for (i=0; i<(args.length-2); i+=3) 
