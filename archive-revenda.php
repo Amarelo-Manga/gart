@@ -2,7 +2,7 @@
 //iniciar seção e verificar se usuario está logado pelo email
 session_start();
 if ( !isset( $_SESSION[ 'revenda' ] ) ) {
-	$url = "http://gart.com.br/ondecomprar.php";
+	$url = "../onde-comprar";
 	header( "location:$url" );
 }
 ?>
