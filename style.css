@@ -520,4 +520,19 @@ form#especial_gart { width: 96%; background: #eaeca3; padding: 5px 6px 5px 6px;}
 
 .single-galeria h1 {margin-left: -12px !important;}
 
-.galsuper img{width:100% !important; height:auto !important;}
+.galsuper img{width:100% !important; height:auto !important}
+
+/* Page Onde Comprar */
+#cadastro_onde{float: left;margin-right: 54px;width: 50%;}
+#login_onde{}
+#login_onde p{display: inline-block;}
+#login_onde b{
+	font-family: 'Futura-Book';
+}
+span.wpcf7-list-item{display: block;margin: 0px;}
+input[type="submit"]{
+    background-color: #cddd44;
+    border-radius: 5px;
+    border: 0px !important;
+    margin-top: 21px;
+}
