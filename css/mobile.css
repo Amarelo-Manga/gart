@@ -18,6 +18,10 @@
     #main_menu li .sub-menu{position:unset;margin-left: 0px!important;margin: 0 auto!important;}
 
 
+    /*Remove Menu Inspirações*/
+    #menu-item-11801{display: none;}
+    #menu-item-12070{display: none;}
+
     /* Home */
     #dest_prod{display: inline-block;}
     .list_prod_det{width:100%;margin:0px;padding:0px;}
@@ -53,7 +57,7 @@
 
     /*Sobre a gart*/
     .container_page{width: 100%;}
-    #content{width: 100%;}
+    #content{width: 100%;float:inherit;}
     #image_top{width: 100%;}
     #image_top img{width:100%!important;height: auto!important;}
     header.entry-header{margin-left: 15px;}
@@ -63,7 +67,7 @@
     #panel-2-0-1-0> .panel-widget-style{margin-top: 0px;} 
 
     /*Produtos*/
-    div#primary{width:100%;display: inline-block;}
+    div#primary{width: 92%!important;padding: 4%;display: inline-block;}
     #banner_top_prod{width: 100%;}
     #banner_top_prod img{width: 100%;}
     #head_prod{width:100%;margin: 0px;padding-left: 15px;display: block;}
@@ -75,8 +79,8 @@
     #primary .searchandfilter{float: initial;width: 100%;margin:0px;}
     #primary .searchandfilter input[type=text]{width: 100%;margin-top: 0px;max-width: 280px;}
     .searchandfilter input[type=submit]{padding: 5px 30px!important;margin: 10px 0px!important;}
-    .list_prod{padding:15px;}
-    .list_prod li{width: 100%;}
+    .list_prod{padding:10px;}
+    .list_prod li{width: 100%;float: inherit;margin-bottom: 70px;display: block;}
     .navigation li{width:0px;}
     li.next_page{width: 95px !important;}
 
@@ -92,10 +96,106 @@
     #contato select{border: 2px solid #7d7e7e; border-radius: 0px;width: 100%;font-size: 14px;    padding-left: 5px;}
     #contato  textarea{border: 2px solid #7d7e7e;width:100%!important;padding-left: 5px;}
 
+    /*Page Onde Comprar */
+    #banner_ondecomprar {
+        background-image: url('../img/mobile_bg_Onde-Comprar.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 130%;
+        height: 160px;
+    }
+
+    #banner_ondecomprar h1 {
+        position: relative;
+        top: 125px;
+        font-size: 1.4em;
+        background: #b1deda;
+        color: #000;
+        padding: 9px;
+        margin: 10px;
+        display: initial;
+        left: 0%;
+    }   
+
+    #content_revenda{
+        width: 92%;
+        padding: 4%;
+    }
+
+    #cadastro_onde{width: 100%;}
+   input[type="submit"]{margin-top: -5px;}
+
+   .sf-filter fieldset{width: 90%;}
+   .revend_list{width: 90%;}
+
+   .archive #primary{width: 100%!important;}
+
+   #content_prod{width: 100%;}
+   .frase_social{width: 100%;}
+
+   #fotos_prod{width: 100%;}
+   #fotos_prod #thumb img{width: 100%!important;}
+   #img_spec {float: left;width: 50%;padding: 0px;margin: 0px;}
+   #img_spec img{width: 100%;}
+   #propert_list{    width: 46%; margin: 0px 2%;}
+   #propert_list img{width: 100%;}
+   iframe{width: 100%; height:auto;}
+   #sidebar { width: 100%;float: left; padding: 10px 0px 5px 0px;}
+   a.widget_sp_image-image-link {margin-top: 10px;display: table;float: none;margin: 10px auto;}
+   form#especial_gart {width: 92%;background: #eaeca3;padding: 5px 5px;}
+   #especial_gart td{width: 95%!important; display: block;}
+
+   .container_page{width: 100%;padding: 0px; margin: 0px;display: block;}
+   #post-7946 h1.entry-title {margin: 10px 5%;}
+   #list_caixa{padding:0px 4%!important;}
+   #post-7946{margin-bottom:100px;}
+
+    .rodape_prod #title{width: 90%;}
+    .rodape_prod #title h1{display: block;}
+    #gallery_list{width: 100%;margin:0px 2%;}
+    #gallery_list li{display: block;margin:2% 0px;float: inherit;width: 96%;}
+    #primary.rodape_prod{width: 100%!important;}
+
+    ul.sf-nav > li > a, ul.sf-nav > li > span{padding: 5px 10px;}
 
 
+    /* Page Galleria */
+    div#primary.single-galeria{width: 100%!important;}
+    .single-galeria .entry-content a{display: none;}
+    .single-galeria .gallery a{display: block;}
+    .single-galeria .gallery{padding-left: 1px;}
+    .single-galeria .gallery-item{width: 48%;margin: 1%;}
+
+    /* Page Videos */
+    div#primary.videos{width: 100%!important;}
+    ul.video_list{margin: 5px;padding: 10px;}
+    .video_list li{width: 100%;margin: 0px 0px 20px 0px;}
+    .video_list_single li{width: 100%;margin: 0px;margin-bottom: 20px;}
 
 
+    /*Page News*/
+    #content_news{width: 100%;padding: 5px;}
+    .list_news{width: 85%;}
+    .content_blog_item{width: 100%;margin: 0px;}
+    .content_blog_item header.entry-header{margin-left:0px}
+    #secondary{width: 95%;}
+
+
+    .supergart #title{width: 90%;}
+
+    #box_especial{display: block;padding: 10px;margin: 0px;margin-left: -10px;}
+    #box_especial table, #box_especial tbody, #box_especial tr, #box_especial td, #box_especial img{display: block;width: 100%;}
+    .navigation{width: 100%;margin-top: 10px;}
+    .navigation li{margin: 0px!important;display: inline-block;}
+    .navigation li.prev_page{width: 100px!important;}
+
+
+    img.aligncenter{width: 100%;}
+    .so-widget-sow-button{margin-bottom:20px;}
+
+
+    /*page 404*/
+    .page404{width: 90%;margin: 0px;padding: 5%!important;}
   
 }
 
