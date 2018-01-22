@@ -55,6 +55,13 @@
     .social_footer{margin-left: -50px;}
     #menu-menu_rodape{padding: 0px 15px;}
 
+	 /*Slideshow*/
+	  #slideshow{display:none !important;}
+	  #slideshow_mobile{display:block;}
+	  #slideshow_mobile img{width:100%; height:auto; margin-top:-176px;}
+	  .txt_span { background-image: url('../img/bg_txt_mobile.png'); width: 300px; margin: auto; position: relative; padding: 3px 21px; text-align: center; margin-top: 14%;}
+	  
+	 
     /*Sobre a gart*/
     .container_page{width: 100%;}
     #content{width: 100%;float:inherit;}

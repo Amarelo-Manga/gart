@@ -544,5 +544,16 @@ function session_revenda(){
 	echo $response;
 }
 
-
+/**
+ *  Add Style Min
+ */
+function style_or_min_style( $stylesheet_uri, $stylesheet_dir_uri ) {
+    $located = locate_template( 'style.min.css' );
+	if ($located != '' ) {
+	    return trailingslashit( $stylesheet_dir_uri ) . 'style.min.css';
+	} else {
+	   return trailingslashit( $stylesheet_dir_uri ) . 'style.css';
+	}
+}
+add_filter( 'stylesheet_uri', 'style_or_min_style', 10, 2);
 

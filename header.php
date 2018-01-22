@@ -6,7 +6,7 @@
 
 	<?php wp_head(); ?>
 
-	<link rel='stylesheet' media='(min-width: 320px) and (max-width: 480px)' href='<?php echo get_template_directory_uri()?>/css/mobile.css' />
+	<link rel='stylesheet' media='(min-width: 320px) and (max-width: 480px)' href='<?php echo get_template_directory_uri()?>/css/mobile.min.css' />
 
 	<link rel='stylesheet' media='(min-width: 768px) and (max-width: 1024px)' href='<?php echo get_template_directory_uri()?>/css/tablets.css' />
 
