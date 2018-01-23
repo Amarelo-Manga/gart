@@ -19,6 +19,16 @@ elseif($slug_category == "roda-meios"){$class_color_cat="rodameios_prod";}
 elseif($slug_category == "roda-tetos"){$class_color_cat="rodatetos_prod";}
 elseif($slug_category == "rosetas"){$class_color_cat="rosetas_prod";}
 elseif($slug_category == "molduras-externas"){$class_color_cat="supergart";}
+
+if( get_field('sem_prefixo') ){
+  $name_prefix ="";
+
+}else{ 
+
+  $name_prefix = $name;
+} 
+
+
 ?>
     
 <div id="content_prod" class="<?php echo $class_color_cat ?>"> 
@@ -35,7 +45,7 @@ elseif($slug_category == "molduras-externas"){$class_color_cat="supergart";}
         <!--li><img src="<?php //echo get_template_directory_uri()?>/img/link_twitter.jpg"> </li-->
       </ul>
     </div>
-    <h1> <?php echo $name ?> <?php the_title() ?> - <?php the_field('nome_linha', $taxonomy . '_' . $term_id); ?></h1>
+    <h1> <?php echo $name_prefix; ?> <?php the_title() ?> - <?php the_field('nome_linha', $taxonomy . '_' . $term_id); ?></h1>
     <div class="block"> 
       <!--Thumbnail dos produtos e galeria -->
       <div id="fotos_prod">
@@ -109,7 +119,15 @@ mofa ou deteriora </div>
     <div class="blocktext_prod">
       <h2>Detalhes do produto</h2>
       <div class="text_area_prod">
-      <?php the_field('descrição_da_linha', $taxonomy . '_' . $term_id); ?>
+
+      <?php 
+        if(  !empty( get_the_content() )  ){
+          the_content();
+        } else{
+          the_field('descrição_da_linha', $taxonomy . '_' . $term_id); 
+        }
+
+      ?>
       </div>
     </div>
     <div class="blocktext_prod">

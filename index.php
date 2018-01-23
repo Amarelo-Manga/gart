@@ -2,6 +2,10 @@
 <!-- Slideshow -->
 
 <div id="slideshow"> <?php echo do_shortcode('[smartslider3 slider=2]');?></div>
+<div id="slideshow_mobile">
+<div class="txt_span"><p>DEIXE SUA CASA MAIS BONITA COM<br>OS RODAPÉS E GUARNIÇÕES WALLSTYL</p></div>	
+<img src="<?php echo get_template_directory_uri()?>/img/banner_mobile.jpg"/>
+</div>
 <section id="dest_prod">
 	<ul class="list_prod_det">
 		<li> <a href="http://gart.com.br/linha_de_produto/roda-tetos/"> <img src="<?php echo get_template_directory_uri()?>/img/dest_prod_roda-teto.jpg" alt="Roda-tetos" />

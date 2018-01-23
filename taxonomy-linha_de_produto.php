@@ -1,5 +1,4 @@
 
-
 <?php get_header(); ?>
 
 <?php 
@@ -60,7 +59,15 @@ function MM_showHideLayers() { //v9.0
        <? $image_descricao = get_field('foto_de_medida'); ?>
        <div id="prod_tipo_<?php echo $count ?>" class="hover_descri_prod" onMouseOver="MM_showHideLayers('prod_tipo_<?php echo $count ?>','','show')" onMouseOut="MM_showHideLayers('prod_tipo_<?php echo $count ?>','','hide')" ><img src="<?php echo $image_descricao['url'] ?>" /></div>
        <img src="<?php echo get_the_post_thumbnail_url()?>" class="thumb_prod" onMouseOver="MM_showHideLayers('prod_tipo_<?php echo $count ?>','','show')" onMouseOut="MM_showHideLayers('prod_tipo_<?php echo $count ?>','','hide')" />
-       <div class="nome_prod"> <?php echo single_term_title() ?> - <?php the_title() ?></div>
+          
+          
+       <div class="nome_prod"> 
+         <?php if( get_field('sem_prefixo') ){}else{ ?>
+	
+           <?php echo single_term_title() ?> -
+	
+<?php } ?>
+        <?php the_title() ?></div>
        <a href="<?php echo get_permalink() ?>" class="btn_zoom"> </li></a>
      
 	   </a>   
